@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #fff3e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .agendamento-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+  }
+  .agendamento-container h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .agendamento-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  .agendamento-container label,
+  .agendamento-container select,
+  .agendamento-container input,
+  .agendamento-container button {
+    margin: 0.5rem 0;
+  }
+  .agendamento-container button {
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }

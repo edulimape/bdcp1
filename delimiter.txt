@@ -1,0 +1,29 @@
+delimiter $
+
+create procedure cad_login(USLog varchar(45), SNLog varchar(45), EMLog varchar(45), NMCli varchar(90), 
+CPFCli varchar(14), TELCli varchar(14), ENDCli varchar(90))
+begin
+declare CodigoLog int;
+insert into login
+	(Login, Senha, Email)
+values(USLog, SNLog, EMLog);
+
+set CodigoLog=(Select max(idLogin) from login);
+
+insert into cliente(Nome, CPF, Telefone, Cadastro_idCadastro)
+values (NMCli, CPFCli, TELCli, CodigoLog);
+
+end;$
+
+create procedure cad_lavagem(TPCad varchar(45), DTLCad date, CARCad varchar(45), HRCad time,  CPFCli varchar(14))
+begin
+
+declare CodigoLav int;
+
+set CodigoLav = (select idLavagem from lavagem where tipo_lavagem like "%TPCad%");
+
+insert into agendamento
+	(data_lavagem, carro, hora_lavagem, cpf_cliente, Tipo_lavagem_idTB_ITEMPEDIDO)
+values(DTLCad, CARCad, HRCad, CodigoCli, CodigoLav);
+
+end;$

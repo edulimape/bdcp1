@@ -1,0 +1,114 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f9fc;
+    color: #333;
+  }
+  
+  .header {
+    background-color: #0077cc;
+    padding: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .header nav a:hover {
+    text-decoration: underline;
+  }
+
+  .main-content {
+    padding: 2rem;
+  }
+  
+  .intro {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .servicos {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    width: 250px;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card h4 {
+    color: #0077cc;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cta {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .btn-agendar {
+    background-color: #0077cc;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-agendar:hover {
+    background-color: #005fa3;
+  }
+  
+  .footer {
+    background-color: #003f66;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
